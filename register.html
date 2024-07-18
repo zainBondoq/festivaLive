@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+
+    <link href="css/templatemo-festava-live.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form
+      class="custom-form ticket-form mb-5 mb-lg-0"
+      action="#"
+      method="post"
+      role="form"
+    >
+      <h2 class="text-center mb-4">Register !</h2>
+
+      <div class="container">
+        <div class="ticket-form-body">
+          <div class="row">
+            <div class="row">
+              <div class="col-6 mx-auto">
+                <input
+                  type="text"
+                  name="register-firstname"
+                  id="register-firstname"
+                  class="form-control"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+              <div class="col-6 mx-auto">
+                <input
+                  type="text"
+                  name="register-Lastname"
+                  id="register-Lastname"
+                  class="form-control"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 mx-auto">
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="ticket-form-phone"
+                  placeholder="Ph 085-456-7890"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required=""
+                />
+              </div>
+              <div class="col-12 mx-auto">
+                <input
+                  type="email"
+                  name="register-email"
+                  id="register-email"
+                  pattern="[^ @]*@[^ @]*"
+                  class="form-control"
+                  placeholder="Email address"
+                  required
+                />
+              </div>
+              <div class="col-12 mx-auto">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="form-control"
+                  placeholder="password"
+                  required
+                />
+              </div>
+              <div class="col-12 mx-auto">
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  class="form-control"
+                  placeholder="confirm password"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-10 col-8 mx-auto">
+            <button type="submit" class="form-control">Register</button>
+          </div>
+          <p style="text-align: center">
+            alread have an account?
+            <a href="login.html">Log in </a>
+          </p>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
